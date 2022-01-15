@@ -1,4 +1,3 @@
-
 package campominado;
 
 import java.util.Random;
@@ -18,7 +17,7 @@ public class AreaDoCampo {
 
         for (int i = 0; i < Tamanho.linhas; i++) {
             for (int j = 0; j < Tamanho.colunas; j++) {
-                if (i > 0){                                      //condições para as bordas da area, onde não possui quadrado
+                if (i > 0){                                      //condiÃ§Ãµes para as bordas da area, onde nÃ£o possui quadrado
                     if (j > 0) matriz[i][j].adicionarVizinhos(matriz[i-1][j-1]);
                     matriz[i][j].adicionarVizinhos(matriz[i-1][j]);
                     if (j < Tamanho.colunas-1) matriz[i][j].adicionarVizinhos(matriz[i-1][j+1]);
